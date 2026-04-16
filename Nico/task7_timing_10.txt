@@ -1,0 +1,4 @@
+
+Processed 10 floorplans in 14.55 s
+Average per floorplan: 1.45 s
+Estimated time for all 4571 floorplans: 1.85 hours

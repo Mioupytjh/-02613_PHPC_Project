@@ -1,0 +1,106 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 28222672: <wallheat_static> in cluster <dcc> Done
+
+Job <wallheat_static> was submitted from host <gbarlogin1> by user <s253810> in cluster <dcc> at Thu Apr 16 09:12:38 2026
+Job was executed on host(s) <8*n-62-28-29>, in queue <hpc>, as user <s253810> in cluster <dcc> at Thu Apr 16 09:12:40 2026
+</zhome/7d/4/224047> was used as the home directory.
+</zhome/7d/4/224047/Python02613/phpc-assignment> was used as the working directory.
+Started at Thu Apr 16 09:12:40 2026
+Terminated at Thu Apr 16 09:16:57 2026
+Results reported at Thu Apr 16 09:16:57 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -q hpc
+#BSUB -J wallheat_static
+#BSUB -n 8
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=4GB]"
+#BSUB -W 01:00
+#BSUB -oo task5_out.txt
+#BSUB -eo task5_err.txt
+
+python task5_static_parallel.py 100 8 > task5_workers8.txt
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1671.87 sec.
+    Max Memory :                                 139 MB
+    Average Memory :                             128.25 MB
+    Total Requested Memory :                     32768.00 MB
+    Delta Memory :                               32629.00 MB
+    Max Swap :                                   -
+    Max Processes :                              12
+    Max Threads :                                16
+    Run time :                                   257 sec.
+    Turnaround time :                            259 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <task5_err.txt> for stderr output of this job.
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 28222673: <wallheat_static> in cluster <dcc> Done
+
+Job <wallheat_static> was submitted from host <gbarlogin1> by user <s253810> in cluster <dcc> at Thu Apr 16 09:12:53 2026
+Job was executed on host(s) <4*n-62-30-25>, in queue <hpc>, as user <s253810> in cluster <dcc> at Thu Apr 16 09:12:53 2026
+</zhome/7d/4/224047> was used as the home directory.
+</zhome/7d/4/224047/Python02613/phpc-assignment> was used as the working directory.
+Started at Thu Apr 16 09:12:53 2026
+Terminated at Thu Apr 16 09:20:07 2026
+Results reported at Thu Apr 16 09:20:07 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -q hpc
+#BSUB -J wallheat_static
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=4GB]"
+#BSUB -W 01:00
+#BSUB -oo task5_out.txt
+#BSUB -eo task5_err.txt
+
+python task5_static_parallel.py 100 4 > task5_workers4.txt
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1527.69 sec.
+    Max Memory :                                 82 MB
+    Average Memory :                             63.80 MB
+    Total Requested Memory :                     16384.00 MB
+    Delta Memory :                               16302.00 MB
+    Max Swap :                                   -
+    Max Processes :                              8
+    Max Threads :                                12
+    Run time :                                   434 sec.
+    Turnaround time :                            434 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <task5_err.txt> for stderr output of this job.
+

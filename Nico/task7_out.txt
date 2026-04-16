@@ -1,0 +1,56 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 28224302: <wallheat_numba> in cluster <dcc> Done
+
+Job <wallheat_numba> was submitted from host <gbarlogin1> by user <s253810> in cluster <dcc> at Thu Apr 16 12:09:45 2026
+Job was executed on host(s) <n-62-31-21>, in queue <hpc>, as user <s253810> in cluster <dcc> at Thu Apr 16 12:09:46 2026
+</zhome/7d/4/224047> was used as the home directory.
+</zhome/7d/4/224047/Python02613/phpc-assignment> was used as the working directory.
+Started at Thu Apr 16 12:09:46 2026
+Terminated at Thu Apr 16 12:10:04 2026
+Results reported at Thu Apr 16 12:10:04 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -q hpc
+#BSUB -J wallheat_numba
+#BSUB -n 1
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=4GB]"
+#BSUB -W 01:00
+#BSUB -oo task7_out.txt
+#BSUB -eo task7_err.txt
+
+source /dtu/projects/02613_2025/conda/miniconda3/etc/profile.d/conda.sh
+conda activate 02613
+
+python task7_numba_cpu.py 10 > task7_results_10.csv 2> task7_timing_10.txt
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   16.32 sec.
+    Max Memory :                                 95 MB
+    Average Memory :                             95.00 MB
+    Total Requested Memory :                     4096.00 MB
+    Delta Memory :                               4001.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   18 sec.
+    Turnaround time :                            19 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <task7_err.txt> for stderr output of this job.
+

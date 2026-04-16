@@ -1,0 +1,52 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 28223996: <wallheat_ref> in cluster <dcc> Done
+
+Job <wallheat_ref> was submitted from host <gbarlogin1> by user <s253810> in cluster <dcc> at Thu Apr 16 11:10:16 2026
+Job was executed on host(s) <n-62-31-21>, in queue <hpc>, as user <s253810> in cluster <dcc> at Thu Apr 16 11:10:18 2026
+</zhome/7d/4/224047> was used as the home directory.
+</zhome/7d/4/224047/Python02613/phpc-assignment> was used as the working directory.
+Started at Thu Apr 16 11:10:18 2026
+Terminated at Thu Apr 16 11:11:53 2026
+Results reported at Thu Apr 16 11:11:53 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -q hpc
+#BSUB -J wallheat_ref
+#BSUB -n 1
+#BSUB -R "span[hosts=1]"
+#BSUB -W 01:00
+#BSUB -oo task2_out.txt
+#BSUB -eo task2_err.txt
+
+python task2_reference_timing.py 10 > results_10.csv 2> timing_10.txt
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   94.68 sec.
+    Max Memory :                                 35 MB
+    Average Memory :                             35.00 MB
+    Total Requested Memory :                     1024.00 MB
+    Delta Memory :                               989.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   95 sec.
+    Turnaround time :                            97 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <task2_err.txt> for stderr output of this job.
+

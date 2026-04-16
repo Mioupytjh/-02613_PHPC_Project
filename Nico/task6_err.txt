@@ -1,0 +1,114 @@
+Process ForkPoolWorker-8:
+Process ForkPoolWorker-2:
+Process ForkPoolWorker-6:
+Process ForkPoolWorker-7:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 853, in next
+Process ForkPoolWorker-3:
+Process ForkPoolWorker-1:
+Process ForkPoolWorker-4:
+Process ForkPoolWorker-5:
+    item = self._items.popleft()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 69, in <module>
+    results = list(pool.imap_unordered(process_building, building_ids, chunksize=1))
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 858, in next
+    self._cond.wait(timeout)
+  File "/usr/lib64/python3.9/threading.py", line 312, in wait
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib64/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+  File "/usr/lib64/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/lib64/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 48, in process_building
+    u = jacobi(u0, interior_mask, max_iter=20_000, atol=1e-4)
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 24, in jacobi
+    delta = np.abs(u[1:-1, 1:-1][interior_mask] - u_new_interior).max()
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 48, in process_building
+    u = jacobi(u0, interior_mask, max_iter=20_000, atol=1e-4)
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 23, in jacobi
+    u_new_interior = u_new[interior_mask]
+  File "/usr/lib64/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+KeyboardInterrupt
+  File "/usr/lib64/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+KeyboardInterrupt
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/lib64/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 48, in process_building
+    u = jacobi(u0, interior_mask, max_iter=20_000, atol=1e-4)
+  File "/usr/lib64/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 22, in jacobi
+    u_new = 0.25 * (u[1:-1, :-2] + u[1:-1, 2:] + u[:-2, 1:-1] + u[2:, 1:-1])
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 48, in process_building
+    u = jacobi(u0, interior_mask, max_iter=20_000, atol=1e-4)
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 22, in jacobi
+    u_new = 0.25 * (u[1:-1, :-2] + u[1:-1, 2:] + u[:-2, 1:-1] + u[2:, 1:-1])
+KeyboardInterrupt
+  File "/usr/lib64/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+KeyboardInterrupt
+  File "/usr/lib64/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/lib64/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 48, in process_building
+    u = jacobi(u0, interior_mask, max_iter=20_000, atol=1e-4)
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 22, in jacobi
+    u_new = 0.25 * (u[1:-1, :-2] + u[1:-1, 2:] + u[:-2, 1:-1] + u[2:, 1:-1])
+Traceback (most recent call last):
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 48, in process_building
+    u = jacobi(u0, interior_mask, max_iter=20_000, atol=1e-4)
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 22, in jacobi
+    u_new = 0.25 * (u[1:-1, :-2] + u[1:-1, 2:] + u[:-2, 1:-1] + u[2:, 1:-1])
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/usr/lib64/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 48, in process_building
+    u = jacobi(u0, interior_mask, max_iter=20_000, atol=1e-4)
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 22, in jacobi
+    u_new = 0.25 * (u[1:-1, :-2] + u[1:-1, 2:] + u[:-2, 1:-1] + u[2:, 1:-1])
+KeyboardInterrupt
+    waiter.acquire()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/zhome/7d/4/224047/Python02613/phpc-assignment/task6_dynamic_parallel.py", line 69, in <module>
+    results = list(pool.imap_unordered(process_building, building_ids, chunksize=1))
+KeyboardInterrupt
