@@ -1,0 +1,7 @@
+Vi har problemer med Task 8 (Numba CUDA) på DTU’s HPC cluster.
+Jobbet bliver sendt korrekt og kører på en GPU, og en separat test viser, at både CUDA og Numba fungerer som de skal på systemet.
+Vores Task 8-script crasher med en segmentation fault under eksekvering.
+Det betyder, at problemet ikke ligger i HPC-miljøet, men i vores CUDA-implementering.
+Scriptet fejler, før det når at producere output, så både resultat- og timingfiler er tomme.
+Problemet skyldes sandsynligvis ustabilitet eller forkert håndtering af hukommelse inde i vores CUDA-kernel.
+Jeg har ikke kunne fået det fixet endnu, og er honestly lidt på bar bund ifht hvordan.
